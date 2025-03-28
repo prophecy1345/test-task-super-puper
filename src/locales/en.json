@@ -1,0 +1,123 @@
+{
+  "navigation": {
+    "home": "Home",
+    "terms": "Terms",
+    "order": "Order Now"
+  },
+  "hero": {
+    "title": "SuperPuper Service",
+    "description1": "Our service provides the best super-puper solutions for your needs. Fast, reliable, and affordable super-puper service for everyone. In today's fast-paced digital world, having reliable super-puper services is essential for both personal and business needs. Our platform offers cutting-edge technology combined with user-friendly interfaces.",
+    "description2": "We've been in the super-puper industry for over a decade, serving thousands of satisfied customers worldwide. Our team of experts is continually innovating to bring you the most advanced features and capabilities. Whether you're looking for basic super-puper functionality or advanced enterprise solutions, we have flexible options to meet your specific requirements and budget constraints.",
+    "cta": "Order Now"
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "free": {
+      "title": "Free",
+      "price": "Free",
+      "description": "Perfect for trying out our service",
+      "features": {
+        "0": "10 super-pupers",
+        "1": "Basic support",
+        "2": "1 GB storage"
+      }
+    },
+    "basic": {
+      "title": "Basic",
+      "price": "€9/month",
+      "description": "Great for small projects and teams",
+      "features": {
+        "0": "100 super-pupers",
+        "1": "Priority support",
+        "2": "10 GB storage",
+        "3": "Advanced analytics"
+      }
+    },
+    "advanced": {
+      "title": "Advanced",
+      "price": "€29/month",
+      "description": "For professional users with high demands",
+      "features": {
+        "0": "500 super-pupers",
+        "1": "24/7 premium support",
+        "2": "100 GB storage",
+        "3": "Advanced analytics",
+        "4": "Custom integrations",
+        "5": "Additional 100 super-pupers for €3 each"
+      }
+    },
+    "button": "Order"
+  },
+  "order": {
+    "title": "Choose Your Plan",
+    "subtitle": "Select the plan that best fits your needs",
+    "formTitle": "Create Your Account",
+    "selectPlan": "Select a Plan",
+    "selectedPlan": "Selected",
+    "planExplanation": "Super-pupers are the core units of our service. Each plan includes a different number of super-pupers to match your needs.",
+    "step1": "Select Plan",
+    "step2": "Account Details",
+    "step3": "Confirmation",
+    "summary": {
+      "title": "Order Summary",
+      "plan": "Plan",
+      "included": "Included",
+      "total": "Total"
+    },
+    "promoCode": {
+      "label": "Promo Code",
+      "placeholder": "Enter promo code if you have one",
+      "apply": "Apply",
+      "required": "Please enter a promo code",
+      "invalid": "Invalid promo code",
+      "success": "Promo code applied successfully!"
+    },
+    "fullName": {
+      "label": "Full Name",
+      "placeholder": "Enter your full name",
+      "required": "Full name is required"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "required": "Email is required",
+      "invalid": "Please enter a valid email"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Create a password",
+      "required": "Password is required",
+      "minLength": "Password must be at least 8 characters long",
+      "hint": "Use at least 8 characters with a mix of letters, numbers and symbols"
+    },
+    "payment": {
+      "title": "Payment Information"
+    },
+    "cardNumber": {
+      "label": "Card Number",
+      "placeholder": "XXXX XXXX XXXX XXXX",
+      "required": "Card number is required",
+      "invalid": "Please enter a valid card number"
+    },
+    "expiry": {
+      "label": "Expiry Date",
+      "placeholder": "MM/YY",
+      "required": "Expiry date is required",
+      "invalid": "Please enter a valid expiry date"
+    },
+    "cvc": {
+      "label": "CVC",
+      "placeholder": "CVC",
+      "required": "CVC is required",
+      "invalid": "Please enter a valid CVC"
+    },
+    "termsAgreement": "By creating an account, you agree to our",
+    "termsLink": "Terms of Service",
+    "submit": "Create Account",
+    "processing": "Processing...",
+    "success": "Account created, please check your inbox"
+  },
+  "footer": {
+    "copyright": " 2025 SuperPuper Service. All rights reserved."
+  }
+}
