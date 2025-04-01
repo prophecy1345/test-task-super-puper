@@ -7,10 +7,9 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    planType: {
-      type: String,
-      required: true
-    }
-  })
+  import type { PlanType } from '../../stores/pricingStore'
+
+  defineProps<{
+    planType: PlanType
+  }>()
 </script>

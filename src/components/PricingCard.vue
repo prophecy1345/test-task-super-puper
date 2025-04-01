@@ -8,36 +8,12 @@
     ]"
     @click="selectPlan"
   >
-    <div class="mb-4">
-      <h3 class="text-xl font-bold">{{ $t(`pricing.${planType}.title`) }}</h3>
-      <div class="text-2xl font-bold text-blue-600 mt-2">{{ $t(`pricing.${planType}.price`) }}</div>
-      <p class="text-gray-600 mt-2">{{ $t(`pricing.${planType}.description`) }}</p>
-    </div>
-    
-    <div class="mt-4 flex-grow">
-      <h4 class="font-semibold mb-2">Features</h4>
-      <ul class="space-y-2">
-        <li 
-          v-for="(feature, index) in getFeatures(planType)" 
-          :key="index"
-          class="text-gray-700"
-        >
-          {{ feature }}
-        </li>
-      </ul>
-    </div>
-    
-    <button 
-      @click.stop="selectPlanAndNavigate"
-      class="mt-6 w-full py-2 rounded-md font-medium transition-colors duration-200"
-      :class="[
-        isSelected 
-          ? 'bg-blue-600 text-white hover:bg-blue-700' 
-          : 'bg-white border border-blue-600 text-blue-600 hover:bg-blue-50'
-      ]"
-    >
-      {{ $t('pricing.button') }}
-    </button>
+    <PricingCardHeader :planType="planType" />
+    <PricingFeaturesList :planType="planType" />
+    <PricingCardAction 
+      :isSelected="isSelected" 
+      @select="selectPlanAndNavigate" 
+    />
   </div>
 </template>
 
@@ -47,6 +23,9 @@
   import type { PlanType } from '../stores/pricingStore'
   import { usePricingStore } from '../stores/pricingStore'
   import i18n from '../i18n'
+  import PricingCardHeader from './pricing/PricingCardHeader.vue'
+  import PricingFeaturesList from './pricing/PricingFeaturesList.vue'
+  import PricingCardAction from './pricing/PricingCardAction.vue'
 
   const store = usePricingStore()
   const router = useRouter()
@@ -70,22 +49,5 @@
         locale: currentLocale.value
       }
     })
-  }
-
-  const featureCount = {
-    'free': 3,
-    'basic': 4,
-    'advanced': 6
-  }
-
-  function getFeatures(planType: PlanType): string[] {
-    const count = featureCount[planType] || 0
-    const features: string[] = []
-    
-    for (let i = 0; i < count; i++) {
-      features.push(i18n.global.t(`pricing.${planType}.features.${i}`))
-    }
-    
-    return features
   }
 </script>

@@ -13,12 +13,11 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    isSelected: {
-      type: Boolean,
-      default: false
-    }
-  })
+  defineProps<{
+    isSelected: boolean
+  }>()
 
-  defineEmits(['select'])
+  defineEmits<{
+    (e: 'select'): void
+  }>()
 </script>
